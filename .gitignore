@@ -1,0 +1,10 @@
+# Terraform
+.terraform/
+*.tfstate
+*.backup
+.terraform.*
+# Idea
+.DS_Store
+.idea/
+*.iml
+.vscode/

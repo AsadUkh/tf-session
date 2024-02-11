@@ -1,0 +1,220 @@
+
+
+
+
+
+10 reosurces  ,
+
+
+statefile is same for all 3 reosurces
+
+3 tickets
+
+1 ghous  2 ec2 --> shared locations tfstate --> apply 2 ec2 tfstate
+
+2 Haris 2 buckets 2 --> shared locastions tffstate  ---> apply 2 ec2 ,2 s3
+
+3 ibrahim 2 sg --> shared locastions tffstate  ---> apply 2 ec2 ,2 s3 ,2 sg
+
+
+
+tfstate shared locations 
+s3 bucket cloud storage
+
+
+statefile locking 
+
+
+1 code repo terrafform code 
+1 shared locations
+10  devops
+
+1. ghous, 2  haris , 3 . ibrahim code commit
+
+stefile locking 
+commit --> pipeline trigger  -> statefile lock --> ghous ec2 clludp rovision
+pipeline in queue --> statefile lock --> ghous ec2 clludp rovision
+pipeline in queue --> statefile lock --> ghous ec2 clludp rovision
+
+
+
+
+
+remote state management ,
+aws s3 versioning enabled storing staefile dynamo db for lcking mechanism  , 
+GCP cloud storage versioning enabled 
+
+
+
+
+
+
+s3 , cloud storafge
+abc.csv 5 records
+abc.csv 15 records
+
+versioning enabbled
+
+abc.csv v1 5 records
+abc.csv v2 10 records
+abc.csv v3 15 records
+
+ggit tags
+
+0.1.0 basic funciotnality
+0.2.0 enance functionality
+
+
+terrafform.tfstate 
+ghous 2 ec2 v1
+HB 2 s3 v2
+IK 2 SG v3
+KInza remove 2 buckets
+
+new ticket --> Kinza --> ik new MR 2 bucket resource blocks  remove --> MR  -->apply
+
+
+
+
+
+
+
+
+
+
+AWS RDS relational database system oracle , mysql ,sql server primary key fforeggin key rows cloumns
+NOSQl schemaless datbases  mongodb , firestore , dynamodb { abc: {"a":"value1"}}}
+
+
+dynamo db mongogb 
+
+
+requirement 
+
+backend s3 ,with dynamo 
+push statefile to backend
+
+
+process 
+
+
+aws s3 , dynamo db pre requuisiute 
+
+aws s3 , dynamo db   manually pre requisiute
+
+
+pre req  aws dynamo db or s3 via terraform code provision
+comment out the code  backend code managed statefile, 
+add backned code
+
+
+
+add backlend configuration
+
+
+
+manually UI --> 2 3 bucket , dynamo create
+terrafrom init , terrafrom plan , terraform apply --> remote statefile
+
+
+manually UI -->  bucket , dynamo create
+1 bucket local storage
+add backend
+terraform init --> rewmote backned
+
+
+
+backend creation automated 
+terraform cloud , cicd
+github
+
+
+add resources block for backend
+orgganization --> separate  project configrautuin  for backend , ik project resources
+
+
+
+
+
+
+
+everything sohlud be automated
+
+backned managed
+
+s3 ,dynamo add  --> init , plan ,apply bckedn created
+add backend code -->  migrate krun --> terrafform init plan apply
+
+
+
+terraform github actions
+terraform cloud backned,cicd
+
+
+
+
+
+
+manually UI -->  1 bucket , dynamo create (backend conf)
+code add backend conf ()
+
+
+
+terrafrom code -->  1 bucket , dynamo create (backend conf)
+code add backend conf ()
+
+
+
+
+
+
+
+50 -70  projects
+
+spearate repo project creating backends () create one MR bucket name , tables
+pointing backend (add backned code block)
+
+
+manually configured
+
+single project 
+
+backend creation ,
+ resources create hogaien 
+#comment out backned resources  
+add backend  block maintain
+terrafrom init tfstate file maintain
+
+
+tfstate (1 bucket , dynamo db , rds
+terraform destroy -->steafile  ( ,buckets dleete ,rds delete ,  ,dnamo )
+
+
+
+
+
+
+
+
+
+
+
+
+mutiple projects (70-80) manually bucket dynamo db manually create
+
+
+
+
+backend creation  ste
+bucket name
+tablename 
+
+
+
+
+
+
+
+
+backend 
+ terraform cloud pipeline khud

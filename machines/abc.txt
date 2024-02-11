@@ -1,0 +1,8 @@
+
+
+module 
+
+sg
+main.tf rsource blocks 
+inputs.tf variables deafult pass karany yaa bahar se ksi module se input lerhy
+outputs.tf
