@@ -33,6 +33,16 @@ resource "aws_s3_bucket" "s3" {
   }
 }
 
+resource "aws_s3_bucket" "s3_1" {
+
+  bucket = "my-devops-bucket-2" //varaibles
+
+  tags = {
+    Name        = "prod"
+    Environment = "prod"
+  }
+}
+
 
 # module "my-security-group" {
 #   source = "./sg"
